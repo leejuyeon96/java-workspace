@@ -90,7 +90,7 @@ public class ConditionPractice {
 		int total = num1 + num2 + num3;
 		double average = total / 3;
 
-		if ((num1 > 40) && (num2 > 40) && (num3 > 40) && (average) > 60) {
+		if ((num1 >= 40) && (num2 >= 40) && (num3 >= 40) && (average) >= 60) {
 			System.out.println("국어: " + num1 + " 수학: " + num2 + " 영어: " + num3 + " 합계: " + total + " 평균: " + average
 					+ " 축하합니다, 합격입니다!");
 		} else {
@@ -302,11 +302,13 @@ public class ConditionPractice {
 		System.out.print("과제 점수 : ");
 		int project = sc.nextInt();
 		System.out.print("출석 회수 : ");
-		double number = sc.nextDouble();
+		int number = sc.nextInt();
 		
 		double total = middle*0.2+finals*0.3+project*0.3+number*0.2;
+		System.out.println(total);
+		System.out.println(number);
 		
-		if (total >= 70 && number >= 20*0.7)
+		if (total >= 70 && number >= 14) // (1/20) --> 0.05 -->  0.7 이상이면 된다는 것!
 		{System.out.print("총점 : " +total + " Pass");}
 			else {
 				System.out.print("Fail");}

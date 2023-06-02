@@ -1,5 +1,6 @@
 package com.kh.practice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayPractice {
@@ -37,6 +38,22 @@ public class ArrayPractice {
 	public void method2() {
 		
 		
+		int[] Array = new int[5];
+			
+		System.out.print("배열 0번째 인덱스에 넣을 값 : ");
+		int num1 = sc.nextInt();
+		System.out.print("배열 1번째 인덱스에 넣을 값 : ");
+		int num2 = sc.nextInt();
+		System.out.print("배열 2번째 인덱스에 넣을 값 : ");
+		int num3 = sc.nextInt();
+		System.out.print("배열 3번째 인덱스에 넣을 값 : ");
+		int num4 = sc.nextInt();
+		System.out.print("배열 4번째 인덱스에 넣을 값 : ");
+		int num5 = sc.nextInt();
+		
+		//System.out.print(Arrays.toString());
+		
+		
 		
 		
 	}
@@ -61,6 +78,7 @@ public class ArrayPractice {
 	 * 
 	 * */
 	public void method4() {
+		
 		
 	}
 	

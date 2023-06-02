@@ -1,24 +1,39 @@
 package VideoController;
 
+import com.youtube.model.Video;
+
 public class VideoController {
 
-
- public void upload() {//영상 업로드
-		
-	}
+	Video[] videoList = new Video[5];
+	int index = 0;
 	
-	public void videoList() {//영상 목록
-		
+	
+	public Video upload(Video video) {
+		return videoList[index++] = video;
 	}
-	public void viewVideo() {//영상 1개 보기
-		
+
+	
+	public Video[] videoList() {
+		return videoList;
 	}
-	public void updateVideo() {//동영상 수정
-		
+
+	
+	public Video viewVideo(int index) {
+		return videoList[index];
 	}
-	public void deleteVideo() {//동영상 삭제
-		
+
+	
+	public Video updateVideo(int index, Video video) {
+		return videoList[index] = video;
 	}
+
+	
+	public boolean deleteVideo() {
+		return false;
+	}
+
+
+ 
 	/*영상 업로드
 	 *영상 목록
 	 *영상 1개 보기

@@ -17,10 +17,13 @@ class LoopPractice {
      */
     public void method1() {
     	
+    	System.out.print("사용자 입력 : ");
+        int num1 = sc.nextInt();
     	
-    	for(int i=1; i<=100; i--)
+    	  for(int i=num1; i>=1; i--) {
+    		  System.out.println(i);
+    	  }
     	
-    		System.out.print("사용자 입력 : " + i);
     	
     	
     	
@@ -31,6 +34,13 @@ class LoopPractice {
 
     // 1+(-2)+3+(-4)+...과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100 이상 되는지 출력하시오.
     public void method2() {
+    	
+    	int sum = 0;
+    	 for(int i=1; sum == 100; i++) {
+    	sum += Math.pow(-1,i+1)*i;
+    	System.out.println(i);
+    	 }
+    	 
 
     }
 
@@ -43,7 +53,28 @@ class LoopPractice {
 
     */
     public void method3() {
-
+    	
+        System.out.print("문자열 : ");
+        String a = sc.nextLine();
+        System.out.print("문자 :");
+        char b = sc.next().charAt(0);
+        
+        
+        
+        //System.out.print();
+        
+        
+        
+        
+        
+        
+    	
+    	
+    	
+    	
+    	
+    	
+    	
     }
 
     /*
@@ -113,7 +144,9 @@ class LoopPractice {
 	 
 	 LoopPractice l = new LoopPractice();
 	  l.method1();
-	  l.method6();
+	  //l.method2();
+	 	//l.method3();
+	 //l.method6();
 	 
  }
 }

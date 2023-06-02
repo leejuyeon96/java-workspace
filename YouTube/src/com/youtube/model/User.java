@@ -9,8 +9,11 @@ public class User {
 	 private String nickName;
 	 private char gender;
 	 
+	 Video video;
+	
+	
 	public User() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public String getEmail() {

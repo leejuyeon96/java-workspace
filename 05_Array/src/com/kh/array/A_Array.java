@@ -185,7 +185,7 @@ public class A_Array {
 		
 	}
 	/* Arrays 클래스에서 제공하는 copyOf() 메소드를 이용한 깊은 복사
-	 * 
+	 * a
 	 * [표현법]
 	 * 
 	 * Arrays.copyOF(원본배열, 복사본 배열 길이);

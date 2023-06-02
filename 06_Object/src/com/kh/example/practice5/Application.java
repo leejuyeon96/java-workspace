@@ -81,6 +81,8 @@ public class Application {
 			System.out.print("사원 부서 : ");
 			String dept = sc.nextLine();
 			
+			
+			
 			System.out.print("사원 연봉 : ");
 			int salary = Integer.parseInt(sc.nextLine());
 			
