@@ -1,35 +1,36 @@
 package VideoController;
 
+import java.util.ArrayList;
+
 import com.youtube.model.Video;
 
 public class VideoController {
-
-	Video[] videoList = new Video[5];
-	int index = 0;
 	
+	ArrayList<Video> videoList = new ArrayList<>();
 	
 	public Video upload(Video video) {
-		return videoList[index++] = video;
+		 videoList.add(video);
+		return video;
 	}
 
 	
-	public Video[] videoList() {
+	public ArrayList<Video> videoList() {
 		return videoList;
 	}
 
 	
 	public Video viewVideo(int index) {
-		return videoList[index];
+		return videoList.get(index);
 	}
 
 	
 	public Video updateVideo(int index, Video video) {
-		return videoList[index] = video;
+		 return videoList.set(index, video);
 	}
 
 	
-	public boolean deleteVideo() {
-		return false;
+	public boolean deleteVideo(Video video) {
+		return videoList.remove(video);
 	}
 
 

@@ -1,4 +1,4 @@
-package VideoController;
+package com.youtube.impl;
 
 public interface VideoControllerImpl {
 

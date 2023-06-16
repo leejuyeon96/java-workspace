@@ -114,7 +114,7 @@ public class B_Switch {
 		 System.out.print("월을 입력하세요> ");
 		 int month = sc.nextInt();
 		 
-		 switch (month) {
+		 switch (month) {  
 		 
 		 case 3: case 4: case 5:
 			 System.out.println("봄");
