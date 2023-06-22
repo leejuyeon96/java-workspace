@@ -160,7 +160,7 @@ public class C_For {
 		 */
 
 		System.out.println("문자열의 길이: " + str.length());
-
+		
 		for (int i = 0; i < str.length(); i++) {
 			System.out.println(str.charAt(i));
 		}
@@ -277,7 +277,7 @@ public class C_For {
 		// c.method5();
 		// c.method6();
 		// c.method7();
-		// c.method8();
+		 c.method8();
 		// c.method9();
 		// c.method10();
 		// c.method11();
@@ -285,7 +285,7 @@ public class C_For {
 		// c.method13();
 		// c.method14();
 		// c.method15();
-		c.method16();
+	//	c.method16();
 	}
 
 }
