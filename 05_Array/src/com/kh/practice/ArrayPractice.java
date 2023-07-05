@@ -37,23 +37,27 @@ public class ArrayPractice {
 	 * */
 	public void method2() {
 		
+		int NUM = 0; 
 		
-		int[] Array = new int[5];
+		System.out.print("정수 : ");
+		NUM = sc.nextInt();
+		
+		int[] Array = new int[NUM];
+		int i = 0; 	
+		for (i=0; i<NUM; i++) {
+			System.out.print("배열" + i + "번째 인덱스에 넣을 값 : ");
 			
-		System.out.print("배열 0번째 인덱스에 넣을 값 : ");
-		int num1 = sc.nextInt();
-		System.out.print("배열 1번째 인덱스에 넣을 값 : ");
-		int num2 = sc.nextInt();
-		System.out.print("배열 2번째 인덱스에 넣을 값 : ");
-		int num3 = sc.nextInt();
-		System.out.print("배열 3번째 인덱스에 넣을 값 : ");
-		int num4 = sc.nextInt();
-		System.out.print("배열 4번째 인덱스에 넣을 값 : ");
-		int num5 = sc.nextInt();
+			Array[i] = sc.nextInt();
+		}
+		int sum = 0;
+		for (i=0; i<NUM; i++) {
+			sum += Array[i];
+			
+		}
 		
-		//System.out.print(Arrays.toString());
+		System.out.println(Arrays.toString(Array));
 		
-		
+		System.out.println(sum);
 		
 		
 	}
@@ -65,7 +69,16 @@ public class ArrayPractice {
 	 * 
 	 * */
 	public void method3() {
+		String[] menus = new String[] {"피자", "치킨"};
+		String menu = sc.next();
 		
+		for(int i = 0; i < menus.length; i++) {
+			if (menus[i].equals(menu)) {
+				System.out.println("배달 가능");
+				return;
+			}
+		}
+		System.out.println("배달 불가능");
 	}
 	
 	/*
@@ -79,7 +92,12 @@ public class ArrayPractice {
 	 * */
 	public void method4() {
 		
-		
+		System.out.print("주민등록번호 : ");
+		String num = sc.next();
+		for(int i=0; i<8;i++) {
+			System.out.print(num.charAt(i));
+		}
+		System.out.print("******");
 	}
 	
 	/*
@@ -91,12 +109,20 @@ public class ArrayPractice {
 	 * */
 	public void method5() {
 		
+		System.out.print("단어 입력 : ");
+		String word = sc.next();
+		for(int i = word.length(); 0<i; i--) {
+			System.out.print(word.charAt(i-1));
+		}
 	}
 	
 
 public static void main(String[] args) {
 	ArrayPractice ap = new ArrayPractice();
 	//ap.method1();
-	ap.method2();
+	//ap.method2();
+	//ap.method3();
+	//ap.method4();
+	ap.method5();
 }
 }
